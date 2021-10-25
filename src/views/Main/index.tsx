@@ -3,6 +3,7 @@ import { useNotification } from 'context/notification';
 import Tooltip from 'components/Tooltip';
 import Modal from 'components/Modal';
 import useModal from 'customHooks/useModal';
+import { Button, OutlineButton } from 'components/Buttons'
 
 const Main = () => {
   const [isModalOpen, openModal, closeModal] = useModal();
@@ -29,7 +30,8 @@ const Main = () => {
     <p onClick={() => notification.error('asd')}>Modelo Snackbar</p>
     <p onClick={handleOpenModal}>Modal test</p>
     <Modal
-      // actionButton={<Button onClick={handleCloseModal}>Fechar</Button>}
+      actionButton={<Button onClick={handleCloseModal}>Fechar</Button>}
+      secondaryButton={<OutlineButton onClick={handleCloseModal}>Cancelar</OutlineButton>}
       showModal={isModalOpen}
       isFullscreen
       title={`Título do modal de teste`}

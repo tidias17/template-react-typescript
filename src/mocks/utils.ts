@@ -18,9 +18,9 @@ function createRequestHandler(method:any) {
    * @param {ResponseResolver} resolver
    * @param {Options} options
    */
-  function requestHandler(mask:any, resolver = ():any => {}, options:any) {
+  function requestHandler(mask:any, resolver = (req:any, res:any, ctx:any) => {}, options:any) {
     function nextResolver(req:any, res:any, ctx:any) {
-      const json:any = resolver();
+      const json:any = resolver(req, res, ctx);
 
       if (json instanceof Promise) return json;
 
