@@ -1,7 +1,12 @@
 import MaterialTooltip from '@material-ui/core/Tooltip';
 import Fade from '@material-ui/core/Fade';
 
-const Tooltip = ({ title, children }:any) => {
+export type TooltipProps = {
+  title: string;
+  children: any;
+};
+
+const Tooltip = ({ title, children }: TooltipProps) => {
 
   return (
     <MaterialTooltip
