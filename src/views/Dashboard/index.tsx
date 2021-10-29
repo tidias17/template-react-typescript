@@ -53,7 +53,7 @@ const Dashboard = () => {
           rows={content || []}
           emptyText="Não foram localizados dados a serem exibidos"
           expandedRowRender={() => (
-            <p>Conteúdo</p>
+            <p>Conteúdo detalhado</p>
           )}
         />
     </>

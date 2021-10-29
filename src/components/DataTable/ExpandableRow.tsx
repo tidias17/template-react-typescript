@@ -1,6 +1,5 @@
 import { Collapse } from '@material-ui/core';
 import TableRow from '@material-ui/core/TableRow';
-import React from 'react';
 import { StyledExpandableTableCell } from './styled';
 
 export type ExpandableRowProps = {
