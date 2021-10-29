@@ -9,16 +9,14 @@ export const StyledTypography = styled(Typography)<{$italic?: string}>`
   }
 `;
 
-export const StyledTitle = styled(Typography)`
-  && {
-    font-weight: 700;
-  }
+export const StyledTitle = styled.p`
+  width: 100%;
+  font-weight: 700;
 `;
 
-export const StyledSectionTitle = styled(StyledTitle)<{$spacing: string}>`
-  && {
-    ${({$spacing}) => $spacing && 'padding: 16px;' }
-  }
+export const StyledSectionTitle = styled.p<{$spacing: string}>`
+  width: 100%;
+  ${({$spacing}) => $spacing && 'padding: 16px;' }
 `;
 
 export const StyledComplementTitle = styled.span`

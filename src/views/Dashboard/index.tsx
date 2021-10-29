@@ -48,6 +48,7 @@ const Dashboard = () => {
       <p>Dashboard View</p>
       <DataTable
           title="Tabela de exemplo"
+          subtitle="Detalhaento do descritivo"
           columns={columns}
           rows={content || []}
           emptyText="Não foram localizados dados a serem exibidos"

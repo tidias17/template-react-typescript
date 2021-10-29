@@ -12,7 +12,7 @@ export type ExpandableRowProps = {
 const ExpandableRow = ({ children, isExpanded, columnSize }: ExpandableRowProps) => {
   return (
     <TableRow>
-      <StyledExpandableTableCell>
+      <StyledExpandableTableCell colSpan={columnSize}>
         <Collapse in={isExpanded} timeout="auto" unmountOnExit>
           {children}
         </Collapse>

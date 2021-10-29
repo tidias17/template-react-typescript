@@ -55,7 +55,7 @@ export const StyledTitleColumTable = styled.p`
   margin: 0;
 `;
 
-export const StyledExpandableTableCell = styled(StyledTableCell)`
+export const StyledExpandableTableCell = styled(StyledTableCell)<{colSpan:number}>`
   && {
     padding-bottom: 0;
     padding-top: 0;
