@@ -1,4 +1,5 @@
-import DataTable from 'components/DataTable';
+import React from 'react';
+import { DataTable } from 'click-management-components';
 import { formatDate } from 'utils/formatters';
 
 const Dashboard = () => {

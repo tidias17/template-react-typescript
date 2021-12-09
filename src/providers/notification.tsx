@@ -1,4 +1,4 @@
-import Snackbar from 'components/Snackbar';
+import { Snackbar } from 'click-management-components';
 import {NotificationContext} from 'context/notification';
 import { useMemo, useState, ReactNode } from 'react';
 import { getErrorMessage } from 'utils/error';

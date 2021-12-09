@@ -2,7 +2,7 @@ import '@reach/dialog/styles.css';
 
 import { ReactNode } from 'react';
 
-import Icon from '../Icon';
+import { Icon } from 'click-management-components';
 
 import {
   StyledModalClose,
