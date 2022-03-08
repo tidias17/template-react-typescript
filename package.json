@@ -19,7 +19,7 @@
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.9",
     "axios": "^0.23.0",
-    "click-management-components": "^0.1.37",
+    "click-management-components": "^0.1.39",
     "humps": "^2.0.1",
     "jwt-decode": "^3.1.2",
     "moment": "^2.26.0",
